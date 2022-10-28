@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.mission {
+  height: 450px;
+}
+.bimage {
+  height: 450px;
+  background-color: rgba(3, 21, 161, 0.6);
+  background-image: url("../images/mission.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+.vimage {
+  height: 500px;
+  background-color: rgba(3, 21, 161, 0.6);
+  background-image: url("../images/vision.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+.displayfont {
+  color: white;
+  font-weight: bold;
+}
+.gimage {
+  height: 550px;
+  background-color: rgba(3, 21, 161, 0.6);
+  background-image: url("../images/generic_medicine.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+.limage {
+  height: 500px;
+  background-color: rgba(3, 21, 161, 0.6);
+  background-image: url("../images/life.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.main {
+  background-image: url("../images/focus-main.jpg");
+  background-size: cover;
+  background-color: rgba(33, 46, 142, 0.6);
+  background-blend-mode: multiply;
+}
+.main img {
+  height: 330px;
+  width: 380px;
+}
+.diabetology a {
+  color: black;
+}
+.CARDIOLOGY a {
+  color: black;
+}
+.thrombosis a {
+  color: black;
+}
+
+section h1 {
+  color: white;
+}
+section p {
+  color: rgb(181, 178, 178);
+}
+section a,
+section a:hover {
+  text-decoration: none;
+  color: white;
+}
+header {
+  background-color: #0d6efd;
+}
+li {
+  list-style: none;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+.nav {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.n-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.content h2 {
+  text-decoration: underline;
+}
+.nav-branding {
+  font-size: 1.5rem;
+  margin-left: 40px;
+}
+.nav-branding:hover {
+  color: white;
+}
+.n-link {
+  transition: 0.7s ease;
+}
+.n-link:hover {
+  color: white;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+.n-menu {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+}
+
+.n-menu a {
+  position: relative;
+  color: #fff;
+  transition: 0.5s;
+}
+.n-menu a:before,
+a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.5s;
+  opacity: 0;
+}
+.n-menu a:before {
+  top: 0;
+  left: 0;
+}
+.nav-logo {
+  height: 10px;
+  width: 10px;
+}
+.n-menu a:after {
+  bottom: 0;
+  right: 0;
+}
+.n-menu a:hover:before,
+.n-menu a:hover:after {
+  opacity: 1;
+  width: 100%;
+  transition: 0.5s;
+  color: white;
+}
+.diabetology h1 {
+  text-decoration: underline;
+  color: black;
+}
+.CARDIOLOGY h1 {
+  text-decoration: underline;
+  color: black;
+}
+.thrombosis h1 {
+  text-decoration: underline;
+  color: black;
+}
+.hero {
+  background-image: url("../images/products.jpg");
+  height: 350px;
+  background-color: rgba(3, 21, 161, 0.5);
+  background-blend-mode: multiply;
+  text-align: center;
+}
+footer a span {
+  color: black;
+}
+footer a span:hover {
+  color: black;
+}
+.diabetology,
+.CARDIOLOGY,
+.thrombosis {
+  background-color: #779ceb;
+}
+.second {
+  background-color: #537ebf;
+}
+
+@media (max-width: 1000px) {
+  .gimage {
+    height: 700px;
+  }
+  .limage {
+    height: 700px;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 40px;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .n-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0d6efd;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .n-item {
+    margin: 16px 0;
+  }
+  .n-menu.active {
+    left: 0;
+  }
+  .flexyflex {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 350px) {
+  .hamburger {
+    display: block;
+    margin-right: 0px;
+  }
+  .bimage {
+    height: 700px;
+  }
+  .vimage {
+    height: 700px;
+  }
+  .gimage {
+    height: 800px;
+  }
+  .limage {
+    height: 800px;
+  }
+}
