@@ -42,6 +42,13 @@ section {
   padding-top: 150px;
   padding-bottom: 150px;
 }
+#section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.diabetology {
+  margin-top: 150px;
+}
 .main {
   background-image: url("../images/focus-main.jpg");
   background-size: cover;
@@ -186,6 +193,9 @@ a:after {
   background-blend-mode: multiply;
   text-align: center;
 }
+#make {
+  background-color: #779ceb;
+}
 footer a span {
   color: black;
 }
@@ -195,6 +205,7 @@ footer a span:hover {
 .diabetology,
 .CARDIOLOGY,
 .thrombosis {
+  margin: 50;
   background-color: #779ceb;
 }
 .second {
